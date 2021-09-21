@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <form name="form" method="GET">
+        <label>Nombre y apellidos:</label>
+        <input type="text" name="nombre" placeholder="Nombre y apellidos"><br>
+
+        <label>email:</label>
+        <input type="email" name="email" placeholder="email"><br>
+
+        <label>Fecha de nacimiento:</label>
+        <input type="date" placeholder="Fecha de nacimiento"><br>
+
+        <label>Sexo:</label><br>
+        <input type="radio" name="sexo" value="H">
+        <label>Hombre:</label><br>
+        <input type="radio" name="sexo" value="M">
+        <label>Mujer:</label><br>
+        <input type="radio" name="sexo" value="O">
+        <label>Otro:</label><br>
+
+        <label>Código postal:</label>
+        <input type="text" name="cp" placeholder="Código postal"><br>
+
+        <label>Que ciclo estás estudiando
+            <input list="ciclos" name="miCiclo"/>
+        </label>
+        <datalist id="ciclos">
+            <option value="DAW">
+            <option value="DAM">    
+            <option value="ASIX">
+        </datalist><br>
+
+        <label>Qué frameworks conoces:</label><br>
+        <input type="checkbox" name="Angular" id="framework1">
+        <label for="framework1">Angular</label><br>
+        <input type="checkbox" name="Vue" id="framework2">
+        <label for="framework2">Vue</label><br>
+        <input type="checkbox" name="Simfony" id="framework3">
+        <label for="framework3">Simfony</label><br>
+        <input type="checkbox" name="Laravel" id="framework4">
+        <label for="framework4">Laravel</label><br>
+        <input type="checkbox" name="PoliticaPrivacidad" id="politica">
+        <label for="politica" value="Aceptar">Aceptar politica de privacidad</label><br>
+
+        <input type="submit"/>
+    </form>
+</html>
